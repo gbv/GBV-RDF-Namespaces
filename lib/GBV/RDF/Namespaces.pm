@@ -8,6 +8,7 @@ use RDF::Trine::Namespace;
 use Exporter qw();
 use Carp 'croak';
 
+our @ISA = qw(Exporter);
 our $VERSION = '0.102'; # please update version number (last digit) on update
 
 # please consult http://prefix.cc before adding a prefix
@@ -64,6 +65,7 @@ the caller's namespace.
 
 =head2 SYNOPSIS
 
+    our $ns;
     use GBV::RDF::Namespaces qw($ns);
 
     $uri = $ns->frbr('item');   # returns a RDF::Trine::Resource

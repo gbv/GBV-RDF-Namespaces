@@ -4,6 +4,7 @@ This Perl module defines a RDF::Trine::NamespaceMap with predefined URI
 namespaces for GBV applications. You can use it like this:
 
     # get at least version 0.1 and export namespace map as $ns
+    our $ns;
     use GBV::RDF::Namespaces qw(0.1 $ns);
 
     $uri = $ns->frbr('item');   # returns a RDF::Trine::Resource
