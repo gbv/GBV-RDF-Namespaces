@@ -8,8 +8,9 @@ use RDF::Trine::Namespace;
 use Exporter qw();
 use Carp 'croak';
 
-our $VERSION = '0.1';
+our $VERSION = '0.101'; # please update version number (last digit) on update
 
+# please consult http://prefix.cc before adding a prefix
 our $NS = RDF::Trine::NamespaceMap->new({
    bibo    => 'http://purl.org/ontology/bibo/',
    daia    => 'http://purl.org/ontology/daia/',
