@@ -8,7 +8,7 @@ use RDF::Trine::Namespace;
 use Exporter qw();
 use Carp 'croak';
 
-our $VERSION = '0.101'; # please update version number (last digit) on update
+our $VERSION = '0.102'; # please update version number (last digit) on update
 
 # please consult http://prefix.cc before adding a prefix
 our $NS = RDF::Trine::NamespaceMap->new({
@@ -45,6 +45,7 @@ sub import {
 
     if ( $name =~ /^\$([a-z_][a-z_0-9]*)$/i ) {
         no strict 'refs';
+        no warnings 'once';
         $name = $1;
         ${ $callpkg . "::" . $name } = $NS;
     } else {
