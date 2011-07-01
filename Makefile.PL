@@ -7,6 +7,7 @@ WriteMakefile(
     PREREQ_PM => {
         'RDF::Trine::NamespaceMap' => '0.135',
         'RDF::Trine::Namespace'    => '0.135',
-    }
+    },
+    AUTHOR => 'Jakob Voss <voss@gbv.de>',
 );
 

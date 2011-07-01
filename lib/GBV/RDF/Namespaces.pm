@@ -9,12 +9,15 @@ use Exporter qw();
 use Carp 'croak';
 
 our @ISA = qw(Exporter);
-our $VERSION = '0.102'; # please update version number (last digit) on update
+our $VERSION = '0.103'; # please update version number (last digit) on update
 
 # please consult http://prefix.cc before adding a prefix
 our $NS = RDF::Trine::NamespaceMap->new({
    bibo    => 'http://purl.org/ontology/bibo/',
+   cdtype  => 'http://purl.org/cld/cdtype/',
    daia    => 'http://purl.org/ontology/daia/',
+   daiaservice => 'http://purl.org/ontology/daia/Service/',
+   dc      => 'http://purl.org/dc/elements/1.1/',
    dcterms => 'http://purl.org/dc/terms/',
    foaf    => 'http://xmlns.com/foaf/0.1/',
    frbr    => 'http://purl.org/vocab/frbr/core#',
@@ -23,7 +26,8 @@ our $NS = RDF::Trine::NamespaceMap->new({
    hcterms => 'http://purl.org/uF/hCard/terms/',
    owl     => 'http://www.w3.org/2002/07/owl#',
    rdf     => 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
-   rdfs    => 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+   rdfs    => 'http://www.w3.org/2000/01/rdf-schema#',
+   skos    => 'http://www.w3.org/2008/05/skos#',
    vcard   => 'http://www.w3.org/2006/vcard/ns#',
    void    => 'http://rdfs.org/ns/void#',
    xsd     => 'http://www.w3.org/2001/XMLSchema#',
