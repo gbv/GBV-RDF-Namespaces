@@ -9,7 +9,6 @@ use Exporter qw();
 use Carp 'croak';
 
 our @ISA = qw(Exporter);
-our $VERSION = '0.103'; # please update version number (last digit) on update
 
 # please consult http://prefix.cc before adding a prefix
 our $NS = RDF::Trine::NamespaceMap->new({
@@ -27,7 +26,7 @@ our $NS = RDF::Trine::NamespaceMap->new({
    owl     => 'http://www.w3.org/2002/07/owl#',
    rdf     => 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
    rdfs    => 'http://www.w3.org/2000/01/rdf-schema#',
-   skos    => 'http://www.w3.org/2008/05/skos#',
+   skos    => 'http://www.w3.org/2004/02/skos/core#',
    vcard   => 'http://www.w3.org/2006/vcard/ns#',
    void    => 'http://rdfs.org/ns/void#',
    xsd     => 'http://www.w3.org/2001/XMLSchema#',
@@ -68,6 +67,11 @@ $GBV::RDF::Namespaces::NS, but you can export a reference to it in
 the caller's namespace.
 
 =head2 SYNOPSIS
+
+    use GBV::RDF::Namespaces;
+    my $ns = $GBV::RDF::Namespaces::NS;
+
+    # or
 
     our $ns;
     use GBV::RDF::Namespaces qw($ns);

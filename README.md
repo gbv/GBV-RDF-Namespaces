@@ -12,6 +12,10 @@ namespaces for GBV applications. You can use it like this:
 
     print $uri->uri_value;      # stringify the URI value
 
+    # or access the list of namespaces as:
+    use GBV::RDF::Namespaces;
+    my $ns = $GBV::RDF::Namespaces::NS;
+
 ## Keeping up-to-date
 
 The latest version of this module can be found in a public git repository at
