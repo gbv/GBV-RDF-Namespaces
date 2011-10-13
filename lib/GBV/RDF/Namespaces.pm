@@ -18,6 +18,7 @@ our $NS = RDF::Trine::NamespaceMap->new({
    daiaservice => 'http://purl.org/ontology/daia/Service/',
    dc      => 'http://purl.org/dc/elements/1.1/',
    dcterms => 'http://purl.org/dc/terms/',
+   fabio   => 'http://purl.org/spar/fabio/',
    foaf    => 'http://xmlns.com/foaf/0.1/',
    frbr    => 'http://purl.org/vocab/frbr/core#',
    gbv     => 'http://purl.org/ontology/gbv/',
